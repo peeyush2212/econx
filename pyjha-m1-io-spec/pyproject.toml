@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyjha"
-version = "0.1.1"
+version = "0.1.2"
 description = "Small helpers for data loading, spec parsing, and linear models."
 readme = "README.md"
 requires-python = ">=3.9"
