@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyjha"
+version = "0.1.1"
+description = "Small helpers for data loading, spec parsing, and linear models."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Peeyush Jha" }]
+dependencies = ["pandas>=2.1", "numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.6", "black>=24.3", "mypy>=1.10", "nox>=2024.4.15", "openpyxl>=3.1"]
+excel = ["openpyxl>=3.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyjha"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/pyjha", "README.md", "pyproject.toml", "LICENSE", "tests"]
