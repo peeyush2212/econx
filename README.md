@@ -3,8 +3,7 @@
 A **Stata-like econometrics** package focused on **time series** and **panel data**, built on
 top of `statsmodels` and `linearmodels`. This is the **M0 scaffold** (project bootstrap).
 
-> Roadmap: wrap existing functions (ARIMA/VAR/VECM; FE/RE/IV/SUR/FMB) and implement
-> missing panel diagnostics (Hausman, BP LM, Wooldridge AR(1), Pesaran CD) and panel unit-root tests.
+
 
 ## Quick start (local)
 
